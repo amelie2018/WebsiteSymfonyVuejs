@@ -1,8 +1,17 @@
 <template>
-<div>
-    <h1>Nos Services</h1>
-    <p> En cours de construction </p>
-     </div>
+<div class="vue-tempalte">
+        <div class="vertical-center">
+       
+            <h3>Nos Services</h3>
+
+            <p >
+                En cours de construction
+            </p>
+
+          
+    </div>
+    </div>
+   
 </template>
 
 <script>

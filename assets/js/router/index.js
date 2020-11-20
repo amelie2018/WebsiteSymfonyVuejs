@@ -20,7 +20,7 @@ Vue.use(VueRouter)
     component: () => import('../components/ForgotPassword.vue')
   },
   {
-    path: '/acceuil',
+    path: '/',
     name: 'acceuil',
     component: () => import('../components/acceuil.vue')
   },

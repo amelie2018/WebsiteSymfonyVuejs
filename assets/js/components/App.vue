@@ -9,14 +9,14 @@
         
          <ul class="nav   flex-row  mr-auto  float-left">
       <li class="nav-item active">
-        <a class="nav-link" href="/acceuil">Acceuil <span class="sr-only">(current)</span></a>
+       <router-link class="nav-link pr-3" to="/">acceuil</router-link>
       </li>
       <li class="nav-item">
-       
-         <router-link class="nav-link" to="/services">Services</router-link>
+      
+        <router-link class="nav-link pr-3" to="/services">Services</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
+       <router-link class="nav-link pr-3" to="/contact">contact</router-link>
       </li>
      
     </ul>

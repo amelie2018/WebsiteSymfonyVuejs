@@ -1,5 +1,16 @@
 <template>
-    <h1>Bienvenue à Commune El-guettar</h1>
+  <div class="vue-tempalte">
+        <div class="vertical-center">
+       
+            <h3>Bienvenue à commune El-guettar</h3>
+
+            <p >
+                En cours de construction
+            </p>
+
+          
+    </div>
+    </div>
 </template>
 
 <script>
