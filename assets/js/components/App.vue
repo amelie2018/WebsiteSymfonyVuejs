@@ -1,13 +1,15 @@
 <template>
-  <div class="vue-tempalte">
+  <div ><!--class="vue-tempalte"-->
+    <div>
     <!-- Navigation -->
+
     <nav class="navbar shadow bg-white rounded justify-content-between flex-nowrap flex-row fixed-top">
       <div class="container">
         <ul class="navbar-brand float-left">
-        <img  src="../components/img/logocommune.jpg" >
+      <!--  <img  src="../components/img/logocommune.jpg" >-->
         </ul >
         
-         <ul class="nav   flex-row  mr-auto  float-left">
+    <ul class="nav   flex-row  mr-auto  float-left">
       <li class="nav-item active">
        <router-link class="nav-link pr-3" to="/">acceuil</router-link>
       </li>
@@ -21,53 +23,54 @@
      
     </ul>
         
-        
-      <!--  <a class="navbar-brand float-left" href="https://www.linkedin.com" target="_blank">
-          Commune Elguetar 
-        </a>-->
-        <ul class="nav navbar-nav flex-row float-right">
+     <ul class="nav navbar-nav flex-row float-right">
           <li class="nav-item">
             <router-link class="nav-link pr-3" to="/login">Se Connecter</router-link>
           </li>
           <li class="nav-item">
             <router-link class="btn btn-outline-primary" to="/signup">S'inscrire</router-link>
           </li>
-        </ul>
+      </ul>
 
        
       </div>
      
     </nav>
-   <!--  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>-->
-
-  
-<!--</nav>-->
-
-    <!-- Main -->
-    <div class="App">
-     <!-- <div class="vertical-center">
-        <div class="inner-block">-->
-          <router-view />
-      <!--  </div>
-      </div>-->
     </div>
+  
 
+  <!-- Main -->
+    <div class="App">
+          <router-view />
+           <Slider />
+    </div>
+    
+ 
   </div>
 </template>
 <script>
+import Slider from '../components/Slider.vue'
 
    export default {
        name: "app",
+       components: {
+    Slider
+  }
       
       
    }
     
 </script>
 <style  scoped>
- 
+ #app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+body{
+  margin:0px;
+}
  
 </style>
