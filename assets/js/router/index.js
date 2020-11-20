@@ -5,7 +5,11 @@ Vue.use(VueRouter)
 
   const routes = [
   {
+<<<<<<< HEAD
     path: '/signup',
+=======
+    path: '/',
+>>>>>>> 05cf8da26dfb6b724c518a256660a83e14fdf421
     name: 'signup',
     component: () => import('../components/Signup.vue')
   },
@@ -20,6 +24,7 @@ Vue.use(VueRouter)
     component: () => import('../components/ForgotPassword.vue')
   },
   {
+<<<<<<< HEAD
     path: '/acceuil',
     name: 'acceuil',
     component: () => import('../components/acceuil.vue')
@@ -33,6 +38,11 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'contact',
     component: () => import('../components/contact.vue')
+=======
+    path: '/home',
+    name: 'home',
+    component: () => import('../components/home.vue')
+>>>>>>> 05cf8da26dfb6b724c518a256660a83e14fdf421
   }
 
 
