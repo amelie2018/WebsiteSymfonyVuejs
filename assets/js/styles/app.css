@@ -4,13 +4,13 @@
       
       body {
        /* background: #2554FF !important;*/
-        background-image:url(../components/img/couverturecommune.jpg);
+       /* background-image:url(../components/img/couverturecommune.jpg);
        /* background-repeat:no-repeat;
         background-position:center ;*/
-        background-size: cover;
+     /*   background-size: cover;
          -webkit-background-size: cover;
          -moz-background-size: cover;
-         -o-background-size: cover;
+         -o-background-size: cover;*/
         min-height: 100vh;
         display: flex;
         justify-content: center;
