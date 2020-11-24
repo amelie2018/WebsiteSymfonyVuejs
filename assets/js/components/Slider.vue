@@ -11,13 +11,19 @@
 </template>
 
 <script>
+
 export default {
+  
+  
   name: 'Slider',
   data() {
     return {
       images: [
-        
-         require('../components/img/couverturecommune.jpg'),
+
+       ' /build/assets/img/couverturecommune.jpg',
+      
+        /*'./img/couverturecommune.jpg',*/
+       
         /*'../components/img/couverturecommune.jpg',
        /* 'https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg',*/
         'https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg',

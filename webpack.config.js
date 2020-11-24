@@ -60,6 +60,7 @@ Encore
     // enables Sass/SCSS support
     .enableSassLoader()
 
+
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 
@@ -73,16 +74,30 @@ Encore
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/admin.js')
+
    // environment.loaders.get('file').use.find(item => item.loader === 'file-loader').options.esModule = false
-   /* .configureFilenames({
-        
-        images: '[path][name].[ext]',
-    })*/
-    .copyFiles({
+   
+   /* .copyFiles({
         from: './assets/js/components/img',
         to: '[path][name].[hash:8].[ext]',
         context: './assets'
-    })
+    })*/
+
+  /*  .configureFilenames({
+        images: '[path][name].[hash:8].[ext]',
+        })*/
+
+        if (Encore.isProduction()) {
+            Encore.configureFilenames({
+                images: '[path][name].[hash:8].[ext]',
+                fonts: '[path][name].[hash:8].[ext]'
+            });
+        } else {
+            Encore.configureFilenames({
+                images: '[path][name].[ext]',
+                fonts: '[path][name].[ext]'
+            });
+        }
 ;
 
 module.exports = Encore.getWebpackConfig();

@@ -18,6 +18,9 @@ import App from './components/App'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+const imagesContext = require.context('../img', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
+imagesContext.keys().forEach(imagesContext);
+
 /**
 * Create a fresh Vue Application instance
 */
