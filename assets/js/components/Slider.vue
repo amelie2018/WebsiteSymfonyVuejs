@@ -20,15 +20,17 @@ export default {
     return {
       images: [
 
-       ' /build/assets/img/couverturecommune.jpg',
-      
-        /*'./img/couverturecommune.jpg',*/
-       
-        /*'../components/img/couverturecommune.jpg',
-       /* 'https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg',*/
+        /* 'https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg',
         'https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg',
         'https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg',
-        'https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg'
+        'https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg',*/
+       
+        '/build/assets/img/couverturecommune.jpg',
+        '/build/assets/img/image1.jpg',
+        '/build/assets/img/image2.jpg',
+        '/build/assets/img/image3.jpg',
+        '/build/assets/img/image4.jpg',
+
         ],
       timer: null,
       currentIndex: 0,
@@ -82,7 +84,9 @@ export default {
 }
 
 img {
-height:600px;
+/*height:600px;
+width:100%*/
+height:400px;
 width:100%
   }
 
