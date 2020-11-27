@@ -5,7 +5,7 @@
 -->
  <mdb-navbar color="indigo" dark>
     <mdb-navbar-brand href="https://mdbootstrap.com/">
-      Navbar
+      Commune El-guettar
     </mdb-navbar-brand>
     <mdb-navbar-toggler>
       <mdb-navbar-nav>
@@ -29,7 +29,7 @@
 
   <!-- Main -->
     <div class="App">
-           <Slider/>
+           <!--<Slider/>-->
           <router-view />
           
     </div>
