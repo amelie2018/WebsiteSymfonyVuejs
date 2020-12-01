@@ -30,14 +30,99 @@
 
   <!-- Main -->
     <div class="App">
-           --<Slider/>
+           <!--<Slider/>-->
+           <mdb-carousel
+    :interval="8000"
+    slide
+    :items="items"
+    indicators
+  ></mdb-carousel>
           <router-view />
           
     </div>
+
+    <!-- Grid row -->
+<mdb-row>
+  <!-- Grid column -->
+  <div class="column-2 px-2 mb-r">
+    <!--Card-->
+    <mdb-card class="default-color-dark">
+      <!--Card image-->
+      <mdb-view src="https://mdbootstrap.com/img/Photos/Slides/img%2810%29.jpg" alt="photo">
+        <a href="#">
+          <mdb-mask overlay="white-slight" />
+        </a>
+      </mdb-view>
+      <!--Card content-->
+      <mdb-card-body class="text-center">
+        <!--Title-->
+        <h4 class="card-title white-text">Title of the news</h4>
+        <!--Text-->
+        <p class="card-text white-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas.</p>
+        <mdb-btn tag="a" href="#" outline="white" size="md">Button</mdb-btn>
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="column-1 px-2 mb-r">
+    <!--Card-->
+    <mdb-card class="primary-color-dark">
+      <!--Card image-->
+      <mdb-view class="view" src="https://mdbootstrap.com/img/Photos/Slides/img%2811%29.jpg" alt="photo">
+        <a href="#">
+          <mdb-mask overlay="white-slight" />
+        </a>
+      </mdb-view>
+      <!--Card content-->
+      <mdb-card-body class="text-center">
+        <!--Title-->
+        <h4 class="card-title white-text">Title of the news</h4>
+        <!--Text-->
+        <p class="card-text white-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas.</p>
+        <mdb-btn tag="a" href="#" outline="white" size="md">Button</mdb-btn>
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="column-1 px-2">
+    <!--Card-->
+    <mdb-card class="warning-color-dark">
+      <!--Card image-->
+      <mdb-view class="view" src="https://mdbootstrap.com/img/Photos/Slides/img%2812%29.jpg" alt="photo">
+        <a href="#">
+          <mdb-mask overlay="white-slight" />
+        </a>
+      </mdb-view>
+      <!--Card content-->
+      <mdb-card-body class="text-center">
+        <!--Title-->
+        <h4 class="card-title white-text">Title of the news</h4>
+        <!--Text-->
+        <p class="card-text white-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Nemo enim ipsam voluptatem quia voluptas.</p>
+        <mdb-btn tag="a" href="#" outline="white" size="md">Button</mdb-btn>
+      </mdb-card-body>
+    </mdb-card>
+    <!--/.Card-->
+  </div>
+  <!-- Grid column -->
+</mdb-row>
+<!-- Grid row -->
 </div>
 </template>
 <script>
-  import { mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbDropdown, mdbDropdownMenu, mdbDropdownToggle, mdbInput, mdbDropdownItem } from 'mdbvue';
+  import { mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbDropdown, mdbDropdownMenu, mdbDropdownToggle, mdbInput, mdbDropdownItem, mdbCard, mdbCardBody, mdbBtn, mdbView, mdbMask, mdbRow, mdbCarousel } from 'mdbvue';
 
 import Slider from '../components/Slider.vue'
 
@@ -53,11 +138,42 @@ import Slider from '../components/Slider.vue'
       mdbDropdownMenu,
       mdbDropdownToggle,
       mdbDropdownItem,
-      mdbInput
-  }
+      mdbInput,
+      mdbCard,
+      mdbCardBody,
+      mdbBtn,
+      mdbView,
+      mdbMask,
+      mdbRow,
+      mdbCarousel
+  },
+   data() {
+      return {
+        items: [
+          {
+            img: true,
+            src:
+            '/build/assets/img/couverturecommune.jpg'
+            /*  "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"*/
+          },
+          {
+            img: true,
+            src:
+                 '/build/assets/img/image1.jpg'
+             /* "https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"*/
+          },
+          {
+            img: true,
+            src:
+                '/build/assets/img/image2.jpg'
+              /*"https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"*/
+          }
+        ]
+      };
+    }
       
       
-   }
+   };
     
 </script>
 <style  scoped>
@@ -71,5 +187,26 @@ import Slider from '../components/Slider.vue'
 body{
   margin:0px;
 }
+
+ @media (max-width: 767px) {
+    .column-1,
+    .column-2 {
+        width: 100%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+      .column-1 {
+          width: 50%;
+      }
+      .column-2 {
+          width: 100%;
+      }
+  }
+  @media (min-width: 992px) {
+      .column-2,
+      .column-1 {
+          width: 33%;
+      }
+  }
  
 </style>
