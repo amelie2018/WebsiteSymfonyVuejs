@@ -6,22 +6,23 @@
 
  <mdb-navbar color="default" dark   position="top"  >
     <mdb-navbar-brand href="https://mdbootstrap.com/">
-      Commune El-guettar
+     Genius Soft
     </mdb-navbar-brand>
     <mdb-navbar-toggler>
       <mdb-navbar-nav>
         <mdb-nav-item href="/" active>acceuil</mdb-nav-item>
-        <mdb-nav-item href="#">Features</mdb-nav-item>
-        <mdb-nav-item href="#">Pricing</mdb-nav-item>
+        <mdb-nav-item href="/services">Services</mdb-nav-item>
+        <mdb-nav-item href="/contact">contact</mdb-nav-item>
         <mdb-dropdown tag="li" class="nav-item">
-          <mdb-dropdown-toggle tag="a" navLink color="default" slot="toggle" waves-fixed>Dropdown</mdb-dropdown-toggle>
+          <mdb-dropdown-toggle tag="a" navLink color="default" slot="toggle" waves-fixed>Autres</mdb-dropdown-toggle>
           <mdb-dropdown-menu>
-            <mdb-dropdown-item>Action</mdb-dropdown-item>
-            <mdb-dropdown-item>Another action</mdb-dropdown-item>
-            <mdb-dropdown-item>Something else here</mdb-dropdown-item>
+            <mdb-dropdown-item>paramètres</mdb-dropdown-item>
+            <mdb-dropdown-item>autres services</mdb-dropdown-item>
+            <mdb-dropdown-item>Avis</mdb-dropdown-item>
           </mdb-dropdown-menu>
         </mdb-dropdown>
       </mdb-navbar-nav>
+
       <form>
         <mdb-input type="text" class="text-white" placeholder="Search" aria-label="Search" label navInput waves waves-fixed/>
       </form>
@@ -48,7 +49,7 @@
     <!--Card-->
     <mdb-card class="default-color-dark">
       <!--Card image-->
-      <mdb-view src="https://mdbootstrap.com/img/Photos/Slides/img%2810%29.jpg" alt="photo">
+      <mdb-view src="/build/assets/img/serv4.jpg" alt="photo">
         <a href="#">
           <mdb-mask overlay="white-slight" />
         </a>
@@ -56,7 +57,7 @@
       <!--Card content-->
       <mdb-card-body class="text-center">
         <!--Title-->
-        <h4 class="card-title white-text">Title of the news</h4>
+        <h4 class="card-title white-text">Services informatiques</h4>
         <!--Text-->
         <p class="card-text white-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
           aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -73,7 +74,7 @@
     <!--Card-->
     <mdb-card class="primary-color-dark">
       <!--Card image-->
-      <mdb-view class="view" src="https://mdbootstrap.com/img/Photos/Slides/img%2811%29.jpg" alt="photo">
+      <mdb-view class="view" src="/build/assets/img/prod5.jpg" alt="photo">
         <a href="#">
           <mdb-mask overlay="white-slight" />
         </a>
@@ -81,7 +82,7 @@
       <!--Card content-->
       <mdb-card-body class="text-center">
         <!--Title-->
-        <h4 class="card-title white-text">Title of the news</h4>
+        <h4 class="card-title white-text">Vente materiels informatique</h4>
         <!--Text-->
         <p class="card-text white-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
           aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -98,7 +99,7 @@
     <!--Card-->
     <mdb-card class="warning-color-dark">
       <!--Card image-->
-      <mdb-view class="view" src="https://mdbootstrap.com/img/Photos/Slides/img%2812%29.jpg" alt="photo">
+      <mdb-view class="view" src="/build/assets/img/log1.jpg" alt="photo">
         <a href="#">
           <mdb-mask overlay="white-slight" />
         </a>
@@ -106,7 +107,7 @@
       <!--Card content-->
       <mdb-card-body class="text-center">
         <!--Title-->
-        <h4 class="card-title white-text">Title of the news</h4>
+        <h4 class="card-title white-text">Conception et développement des logiciels et applications informatique</h4>
         <!--Text-->
         <p class="card-text white-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
           aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -153,19 +154,19 @@ import Slider from '../components/Slider.vue'
           {
             img: true,
             src:
-            '/build/assets/img/couverturecommune.jpg'
+            '/build/assets/img/img1.jpg'
             /*  "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"*/
           },
           {
             img: true,
             src:
-                 '/build/assets/img/image1.jpg'
+                 '/build/assets/img/img2.jpg'
              /* "https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"*/
           },
           {
             img: true,
             src:
-                '/build/assets/img/image2.jpg'
+                '/build/assets/img/img3.jpg'
               /*"https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"*/
           }
         ]
@@ -194,6 +195,7 @@ body{
         width: 100%;
     }
   }
+ 
   @media (min-width: 768px) and (max-width: 991px) {
       .column-1 {
           width: 50%;
@@ -202,7 +204,8 @@ body{
           width: 100%;
       }
   }
-  @media (min-width: 992px) {
+ 
+ @media (min-width: 992px) {
       .column-2,
       .column-1 {
           width: 33%;

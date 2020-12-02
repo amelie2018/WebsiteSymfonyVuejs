@@ -4,10 +4,6 @@
        
             <h3>Nos Services</h3>
 
-            <p >
-                En cours de construction
-            </p>
-
           
     </div>
     </div>

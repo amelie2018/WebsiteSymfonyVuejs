@@ -2,11 +2,7 @@
   <div class="vue-tempalte">
         <div class="vertical-center">
        
-            <h3>Bienvenue à commune El-guettar</h3>
-
-            <p >
-                En cours de construction
-            </p>
+            <h3>Bienvenue à Genius Soft</h3>
 
           
     </div>
