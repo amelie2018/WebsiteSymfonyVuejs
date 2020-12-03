@@ -37,7 +37,12 @@
     slide
     :items="items"
     indicators
-  ></mdb-carousel>
+  >  
+           <mdb-carousel-text>
+             Some quick example text to build on the card title and
+            make up the bulk of the card's content.
+           </mdb-carousel-text>
+  </mdb-carousel>
           <router-view />
           
     </div>
@@ -154,7 +159,11 @@ import Slider from '../components/Slider.vue'
           {
             img: true,
             src:
-            '/build/assets/img/img1.jpg'
+            '/build/assets/img/img1.jpg',
+            caption: {
+              title: "First slide"
+            }
+           
             /*  "https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"*/
           },
           {
@@ -211,5 +220,12 @@ body{
           width: 33%;
       }
   }
+
+  .caption {
+    display:inline-block;
+    vertical-align:middle;
+    line-height:normal;
+    background:blue;
+}
  
 </style>
